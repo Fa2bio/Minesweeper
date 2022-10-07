@@ -1,0 +1,12 @@
+| (1,1) | (1,2) | (1,3) |
+| (2,1) | (2,2) | (2,3) |
+| (3,2) | (3,2) | (3,3) |
+
+point (2,2) is in side neighbor to point (2,3) |(2-3) + (2-2)| = |-1| = 1
+point (2,2) is in diagonally neighbor to point (3,3) |(2-3) + (2-3)| = |-1-1| = |-2| = 2	
+
+There are two possibilities of valid neighbors: the neighbor is on the side OR the neighbor is diagonally. We check that the neighbor is not in the
+same row and not in the same column. If it's not in the same row AND it's not in the same column, then diagonal is possible.
+
+If the field is a neighbor to the side, then the modulus of the distance is equal to one. If the field is a diagonal neighbor, the modulus of the 
+distance is equal to two. If the distance modulus is different from one OR two, the field cannot be added because it is not a valid neighbor.
