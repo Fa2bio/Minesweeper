@@ -1,11 +1,13 @@
-package com.github.FabioSCP0.Minesweeper.model;
+package com.github.Fa2bio.Minesweeper.model;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.github.FabioSCP0.Minesweeper.exceptions.ExplosionException;
+import com.github.Fa2bio.Minesweeper.exceptions.ExplosionException;
 
 class FieldUnitTest {
 	
